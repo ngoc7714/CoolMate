@@ -1,5 +1,8 @@
 :root {
-    --header-height : 70px
+    --header-height : 70px;
+    --main-bg: #d5d5d5;
+    --main-transition: all 0.3s ease;
+    --main-coler: white;
 }
 
 *{
@@ -20,6 +23,10 @@ a {
     color: unset;
 
 }
+input {
+    outline: none;
+
+}
 .row-fex {
     display: flex;
     justify-content: space-between;
@@ -35,8 +42,11 @@ header .row-fex {
 }
 .header-nav ul {
     display: flex;
-    column-gap: 12px;
-
+}
+.header-nav nav ul li {
+    padding: 0 10px;
+    transition: var(--main-transition);
+    cursor: pointer;
 }
 .header-logo img {
     width: 100px;
@@ -45,4 +55,44 @@ header .row-fex {
     line-height: var(--header-height); 
     font-size: smaller;
     
+}
+.header-nav nav ul li:hover {
+    background-color: var(--main-bg);
+}
+.header-search {
+    position: relative;
+}
+.header-search i {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.header-search input {
+    height: 30px;
+    border: 1px solid black;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+.header-cart i {
+    font-size: large;
+    cursor: pointer;
+    position: relative;
+}
+.header-cart i::after{
+    content: attr(number);
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    right: -10px;
+    top: -10px;
+    color: var(--main-coler);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small ;
 }
