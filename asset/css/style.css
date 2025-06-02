@@ -96,3 +96,29 @@ header .row-fex {
     text-align: center;
     font-size: small ;
 }
+/* slider*/
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    aspect-ratio: 2.45/1;
+
+}
+.slider-items {
+    position: relative;
+    transition: var(--main-transition);
+}
+.slider-item {
+    position: absolute;
+
+}
+.slider-item img {
+    width: 100vw; 
+}
+.slider-arrow {
+    position: absolute;
+    z-index: 1;
+}
+.slider-arrow i {
+    cursor: pointer;
+
+}
