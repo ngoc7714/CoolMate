@@ -36,6 +36,9 @@ input {
 header {
     height: var(--header-height);
     border-bottom: 1px solid #ddd;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 header .row-fex {
     align-items: center;
@@ -72,7 +75,7 @@ header .row-fex {
 .header-search input {
     height: 30px;
     border: 1px solid black;
-    padding-left: 20px;
+    padding-left: 24px;
     border-radius: 15px;
 }
 .header-cart i {
@@ -101,7 +104,7 @@ header .row-fex {
     width: 100vw;
     overflow: hidden;
     aspect-ratio: 2.45/1;
-
+    position: relative;
 }
 .slider-items {
     position: relative;
@@ -120,5 +123,13 @@ header .row-fex {
 }
 .slider-arrow i {
     cursor: pointer;
-
+    font-size: large;
+}
+.slider-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
 }
