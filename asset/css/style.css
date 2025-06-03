@@ -133,3 +133,46 @@ header .row-fex {
     display: flex;
     flex-direction: column;
 }
+
+/* reponsive */
+.header-bar-icon,.header-logo-mobile {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .row-fex {
+        padding: 0 12px;
+    }
+    /*header */
+    header .row-fex {
+        height: 70px;
+    }
+    .header-bar-icon,.header-logo-mobile {
+        display: block;
+    }
+    .header-nav {
+        position: fixed;
+        top: calc(-100% - var(--header-height));
+        left: 0;
+        width: 100vw;
+        background-color: black;
+        color: var(--main-coler);
+        transition: var(--main-transition);
+    }
+    .header-nav.active {
+        top: var(--header-height);
+    }
+    .header-nav nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .header-logo-mobile img {
+        width: 70px;
+    }
+    .header-search {
+        display: none;
+    }
+    .header-logo {
+        display: none;
+    }
+  }

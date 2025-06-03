@@ -37,3 +37,11 @@ function silderMove(i) {
   sliderItems.style.left = -i * 100 + "%";
 }
 setInterval(autoSlider, 3000);
+
+//menubar responsive 
+const Menubar = document.querySelector('.header-bar-icon')
+const headerNar = document.querySelector('.header-nav')
+Menubar.addEventListener('click',()=>{
+  headerNar.classList.toggle('active')
+})
+
