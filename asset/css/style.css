@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --header-height : 70px;
     --main-bg: #d5d5d5;
     --main-transition: all 0.3s ease;
     --main-coler: white;
+    --main-fonts: 'Open Sans', sans-serif;
+    --main-font-weight : 500
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--main-fonts);
 }
 
 .container {
@@ -31,7 +35,40 @@ input {
     display: flex;
     justify-content: space-between;
 }
+.row-grid {
+    display: grid;
+    justify-content: space-between;
 
+}
+.heading-text {
+    font-weight: bolder;
+    padding: 12px;
+    position: relative;
+    margin: 20px 0;
+
+}
+.heading-text::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--main-bg);
+}
+.heading-text::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    left: 12px;
+    background-color:black;
+    border-radius: 10px;
+}
 /* header */ 
 header {
     height: var(--header-height);
@@ -133,6 +170,37 @@ header .row-fex {
     display: flex;
     flex-direction: column;
 }
+/* hot-product */
+.hot-products .row-grid-hot-products {
+    grid-template-columns: repeat(5, 19%);
+    
+
+}
+.hot-products-item img {
+    width: 100%;
+}
+.hot-products-item p {
+    font-weight: var(--main-font-weight);
+}
+.hot-products-item span {
+    font-size: smaller;
+    font-weight: 30px;
+}
+.hot-products-price {
+    margin-top: 6px;
+
+}
+.hot-products-price p {
+    font-weight: var(--main-font-weight);
+}
+.hot-products-price p span {
+    font-weight: 300;
+    font-size: small;
+    text-decoration: line-through;
+}
+
+
+
 
 /* reponsive */
 .header-bar-icon,.header-logo-mobile {
