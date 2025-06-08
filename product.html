@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - CoolMate</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+</head>
+<body>
+    <header id="header">
+        <!-- Same header as index.html -->
+        <div class="container row-fex">
+            <div class="header-bar-icon">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div class="header-logo-mobile">
+                <img src="asset/imges/logo-coolmate-new-v2.png" alt="CoolMate Logo Mobile">
+            </div>
+            <div class="header-logo">
+                <img src="asset/imges/logo-coolmate-new-v2.png" alt="CoolMate Logo">
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">SẢN PHẨM</a></li>
+                        <li><a href="#">QUẦN LÓT</a></li>
+                        <li><a href="#">ĐỒ BƠI</a></li>
+                        <li><a href="#">PHỤ KIỆN</a></li>
+                        <li><a href="#">TỰ THIẾT KẾ</a></li>
+                        <li><a href="#">MEN WEAR</a></li>
+                        <li><a href="#">ÁO POLO</a></li>
+                        <li><a href="#">QUẦN SHORT</a></li>
+                        <li><a href="#">ÁO THUN</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-search">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            </div>
+            <div class="header-cart">
+                <a href="cart.html"><i class="ri-shopping-cart-line" id="cart-count" number="0"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <div class="container row-fex">
+                <div class="product-image">
+                    <img id="product-img" src="/asset/imges/product1.webp" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h1 id="product-name">Áo Thun Nam Cotton 220GSM</h1>
+                    <p id="product-material">100% Cotton</p>
+                    <div class="product-price">
+                        <p id="product-price">159.000 đ <span>179.000đ</span></p>
+                    </div>
+                    <div class="product-size">
+                        <p>Chọn kích thước:</p>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="S">S</button>
+                            <button class="size-btn" data-size="M">M</button>
+                            <button class="size-btn" data-size="L">L</button>
+                            <button class="size-btn" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn" data-id="1">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+        <div class="container row-grid">
+            <div class="footer-item">
+                <p>COOLCLUB</p>
+                <p><a href="#">Đăng kí thành viên</a></p>
+                <p><a href="#">Ưu đãi & Đặc quyền</a></p>
+            </div>
+            <div class="footer-item">
+                <p>Tài liệu - Tuyển dụng</p>
+                <p><a href="#">Tuyển dụng</a></p>
+                <p><a href="#">Đăng ký bản quyền</a></p>
+            </div>
+            <div class="footer-item">
+                <p>Chính sách</p>
+                <p><a href="#">Chính sách đổi trả 60 ngày</a></p>
+                <p><a href="#">Chính sách khuyến mãi</a></p>
+                <p><a href="#">Chính sách bảo mật</a></p>
+            </div>
+            <div class="footer-item">
+                <p>Kiến thức mặc đẹp</p>
+                <p><a href="#">Hướng dẫn chọn size đồ nam</a></p>
+                <p><a href="#">Hướng dẫn chọn size đồ nữ</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

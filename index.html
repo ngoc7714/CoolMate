@@ -1,218 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoolMate-Fake</title>
+    <title>CoolMate - Mua sắm thời trang nam</title>
     <link rel="stylesheet" href="asset/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
 </head>
 <body>
-    <!-- header-->
     <header id="header">
-       <div class="container">
-        <div class="row-fex">
+        <div class="container row-fex">
             <div class="header-bar-icon">
-                <i class="ri-menu-fill"></i>
-            </div>
-            <div class="header-logo">
-                <img src="asset\imges\logo-coolmate-new-v2.png" alt="">
+                <i class="ri-menu-line"></i>
             </div>
             <div class="header-logo-mobile">
-                <img src="asset/imges/logo-coolmate-new-v2.png" alt="">
+                <img src="asset/imges/logo-coolmate-new-v2.png" alt="CoolMate Logo Mobile">
+            </div>
+            <div class="header-logo">
+                <img src="asset/imges/logo-coolmate-new-v2.png" alt="CoolMate Logo">
             </div>
             <div class="header-nav">
                 <nav>
                     <ul>
-                        <li><a href=" ">SẢN PHẨM</a></li>
-                        <li><a href="">QUẦN LÓT</a></li>
-                        <li><a href="">ĐỒ BƠI</a></li>
-                        <li><a href="">PHỤ KIỆN</a></li>
-                        <li><a href="">TỰ THIẾT KẾ</li>
-                        <li><a href="">MEN WEAR</a></li>
-                        <li><a href="">ÁO POLO</a></li>
-                        <li><a href="">QUẦN SHORT</a></li>
-                        <li><a href="">ÁO THUN</a></li>
+                        <li><a href="index.html">SẢN PHẨM</a></li>
+                        <li><a href="#">QUẦN LÓT</a></li>
+                        <li><a href="#">ĐỒ BƠI</a></li>
+                        <li><a href="#">PHỤ KIỆN</a></li>
+                        <li><a href="#">TỰ THIẾT KẾ</a></li>
+                        <li><a href="#">MEN WEAR</a></li>
+                        <li><a href="#">ÁO POLO</a></li>
+                        <li><a href="#">QUẦN SHORT</a></li>
+                        <li><a href="#">ÁO THUN</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="header-search">
-                <input type="text" placeholder="Tìm kiếm">
-                <i class="ri-search-eye-line"></i>
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
             </div>
             <div class="header-cart">
-                <i class="ri-shopping-cart-2-line" number = "4"></i>
+                <a href="cart.html"><i class="ri-shopping-cart-line" id="cart-count" number="0"></i></a>
             </div>
         </div>
-       </div>
     </header>
 
     <main>
         <div class="slider">
             <div class="slider-items">
-            <div class="slider-item">
-                <img src="asset/imges/banner1.jpg" alt="">
+                <div class="slider-item"><img src="asset/imges/banner1.jpg" alt="Slider Image 1"></div>
+                <div class="slider-item"><img src="asset/imges/banner2.jpg" alt="Slider Image 2"></div>
+                <div class="slider-item"><img src="asset/imges/banner3.jpg"alt="Slider Image 3"></div>
             </div>
-            <div class="slider-item">
-                <img src="asset/imges/banner2.jpg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="asset/imges/banner3.jpg" alt="">
+            <div class="slider-arrow">
+                <i class="ri-arrow-left-line"></i>
+                <i class="ri-arrow-right-line"></i>
             </div>
         </div>
-        <div class="slider-arrow">
-            <i class="ri-arrow-right-line"></i>
-            <i class="ri-arrow-left-line"></i>
-        </div>
-    </section>
-    <!-- hotproduct-->
-     <setion class="hot-products">
-        <div class="container">
-            <div class="row-grid">
-                <p class="heading-text">Sản Phẩm Mới</p>
 
+        <section class="hot-products" id="new-products">
+            <div class="container">
+                <h2 class="heading-text">Sản Phẩm Mới</h2>
+                <div class="row-grid-hot-products">
+                    <div class="hot-products-item" data-id="1">
+                        <a href="product.html?id=1"><img src="asset/imges/product1.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="2">
+                        <a href="product.html?id=2"><img src="asset/imges/product2.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="3">
+                        <a href="product.html?id=3"><img src="asset/imges/product3.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="4">
+                        <a href="product.html?id=4"><img src="asset/imges/product4.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="5">
+                        <a href="product.html?id=5"><img src="asset/imges/product5.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="6">
+                        <a href="product.html?id=6"><img src="asset/imges/product6.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <!-- Hidden products (revealed by "Show More") -->
+                    <div class="hot-products-item hidden" data-id="7">
+                        <a href="product.html?id=7"><img src="asset/imges/product1.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="8">
+                        <a href="product.html?id=8"><img src="asset/imges/product1.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="9">
+                        <a href="product.html?id=9"><img src="asset/imges/product2.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="10">
+                        <a href="product.html?id=10"><img src="asset/imges/product3.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="11">
+                        <a href="product.html?id=11"><img src="asset/imges/product4.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="12">
+                        <a href="product.html?id=12"><img src="asset/imges/product5.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-more">
+                    <button class="show-more-btn" data-section="new-products">Hiển thị thêm</button>
+                </div>
             </div>
-            <div class="row-grid row-grid-hot-products">
-                <div class="hot-products-item">
-                    <img src="asset/imges/product1.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product6.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product3.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product4.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product5.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product6.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
+        </section>
 
+        <section class="hot-products" id="popular-products">
+            <div class="container">
+                <h2 class="heading-text">Sản Phẩm Phổ Biến</h2>
+                <div class="row-grid-hot-products">
+                    <div class="hot-products-item" data-id="13">
+                        <a href="product.html?id=13"><img src="asset/imges/product6.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="14">
+                        <a href="product.html?id=14"><img src="asset/imges/product1.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="15">
+                        <a href="product.html?id=15"><img src="asset/imges/product2.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="16">
+                        <a href="product.html?id=16"><img src="asset/imges/product3.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="17">
+                        <a href="product.html?id=17"><img src="asset/imges/product4.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item" data-id="18">
+                        <a href="product.html?id=18"><img src="asset/imges/product5.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <!-- Hidden products -->
+                    <div class="hot-products-item hidden" data-id="19">
+                        <a href="product.html?id=19"><img src="asset/imges/product6.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="20">
+                        <a href="product.html?id=20"><img src="asset/imges/product1.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="21">
+                        <a href="product.html?id=21"><img src="asset/imges/product2.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="22">
+                        <a href="product.html?id=22"><img src="asset/imges/product2.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="23">
+                        <a href="product.html?id=23"><img src="asset/imges/product2.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                    <div class="hot-products-item hidden" data-id="24">
+                        <a href="product.html?id=24"><img src="asset/imges/product5.webp" alt="Áo Thun Nam"></a>
+                        <p>Áo Thun Nam Cotton 220GSM</p>
+                        <span>100% Cotton</span>
+                        <div class="hot-products-price">
+                            <p>159.000 đ <span>179.000đ</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-more">
+                    <button class="show-more-btn" data-section="popular-products">Hiển thị thêm</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container row-grid">
+            <div class="footer-item">
+                <p>COOLCLUB</p>
+                <p><a href="#">Đăng kí thành viên</a></p>
+                <p><a href="#">Ưu đãi & Đặc quyền</a></p>
+            </div>
+            <div class="footer-item">
+                <p>Tài liệu - Tuyển dụng</p>
+                <p><a href="#">Tuyển dụng</a></p>
+                <p><a href="#">Đăng ký bản quyền</a></p>
+            </div>
+            <div class="footer-item">
+                <p>Chính sách</p>
+                <p><a href="#">Chính sách đổi trả 60 ngày</a></p>
+                <p><a href="#">Chính sách khuyến mãi</a></p>
+                <p><a href="#">Chính sách bảo mật</a></p>
+            </div>
+            <div class="footer-item">
+                <p>Kiến thức mặc đẹp</p>
+                <p><a href="#">Hướng dẫn chọn size đồ nam</a></p>
+                <p><a href="#">Hướng dẫn chọn size đồ nữ</a></p>
             </div>
         </div>
-     </setion>
-    <!-- popular-product-->
-    <setion class="hot-products">
-        <div class="container">
-            <div class="row-grid">
-                <p class="heading-text">Sản Phẩm Phổ Biến</p>
-
-            </div>
-            <div class="row-grid row-grid-hot-products">
-                <div class="hot-products-item">
-                    <img src="asset/imges/product1.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product6.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product3.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product4.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product5.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-                <div class="hot-products-item">
-                    <img src="asset/imges/product6.webp" alt="">
-                    <p>Áo Thun Nam Cotton 220GSM</p>
-                    <span>100% Cotton</span>
-                    <div class="hot-products-price">
-                        <p>159.000 <sup>đ</sup><samp>179.000<sup>đ</sup></samp></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-     </setion>
-     <!-- Footer-->
-     <footer>
-        <div class="container">
-            <div class="row-grid">
-                <div class="footer-item">
-                    <p>COOLCLUB</p>
-                    <P>Đăng kí thành viên</P>
-                    <P>Ưu đãi & Đặc quyền</P>
-                </div>
-                <div class="footer-item">
-                    <p>Tài liệu - Tuyển dụng</p>
-                    <p>Tuyển dụng</p>
-                    <p>Đăng ký bản quyền</p>
-                </div>
-                <div class="footer-item">
-                    <p>Chính sách</p>
-                    <p>Chính sách đổi trả 60 ngày</p>
-                    <p>Chính sách khuyến mãi</p>
-                    <p>Chính sách bảo mật</p>
-                </div>
-                <div class="footer-item">
-                    <p>Kiến thức mặc đẹp</p>
-                    <p>Hướng dẫn chọn size đồ nam</p>
-                    <p>Hướng dẫn chọn size đồ nữ</p>
-                </div>
-            </div>
-        </div>
-     </footer>
-    <script src="asset/js/script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
