@@ -3,7 +3,7 @@
     --header-height : 70px;
     --main-bg: #d5d5d5;
     --main-transition: all 0.3s ease;
-    --main-coler: white;
+    --main-coler: rgb(255, 255, 255);
     --main-fonts: 'Open Sans', sans-serif;
     --main-font-weight : 500
 }
@@ -70,12 +70,17 @@ input {
     border-radius: 10px;
 }
 /* header */ 
+header.active {
+    background-color: var(--main-coler);
+}
+
 header {
     height: var(--header-height);
     border-bottom: 1px solid #ddd;
     position: fixed;
     z-index: 1;
     width: 100%;
+    transition: var(--main-transition);
 }
 header .row-fex {
     align-items: center;

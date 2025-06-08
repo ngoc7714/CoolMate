@@ -45,3 +45,11 @@ Menubar.addEventListener('click',()=>{
   headerNar.classList.toggle('active')
 })
 
+//stiky header 
+window.addEventListener('scroll',()=> {
+  if(scrollY>50){
+    document.querySelector('#header').classList.add('active')
+  }else {
+    document.querySelector('#header').classList.remove('active')
+  }
+})
