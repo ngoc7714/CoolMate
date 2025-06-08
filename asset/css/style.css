@@ -198,7 +198,23 @@ header .row-fex {
     font-size: small;
     text-decoration: line-through;
 }
-
+/*footer*/
+footer {
+    margin-top: 50px;
+    padding: 50px 0 12px;
+    background-color: var(--main-bg);
+}
+.footer-item p:first-child {
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
+.footer-item p {
+    font-weight: lighter;
+    line-height: 32px;
+}
+footer .row-grid {
+    grid-template-columns: repeat(4,25%);
+}
 
 
 
@@ -207,7 +223,7 @@ header .row-fex {
     display: none;
 }
 @media only screen and (max-width: 600px) {
-    .row-fex {
+    .row-fex, .row-grid {
         padding: 0 12px;
     }
     /*header */
@@ -243,4 +259,15 @@ header .row-fex {
     .header-logo {
         display: none;
     }
+    /*hot-product*/
+    .hot-products .row-grid-hot-products {
+        grid-template-columns: repeat(2, 49%);
+        row-gap: 20px;
+    }
+    /*footer*/
+    footer .row-grid {
+        grid-template-columns: repeat(2,49%);
+        row-gap: 20px;
+    }
+    
   }
